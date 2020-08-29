@@ -18,3 +18,37 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+body{
+    font-family: "Comic Sans MS", sans-serif;	
+
+}
+.navbar-nav a{
+    font-size: larger;
+    margin-left: 50px;
+    font-stretch: expanded;
+    text-align: center;
+  }
+  .navbar-nav a:hover{
+    color: white !important;
+    border-radius: 5px; 
+  }
+  .about_heading, .promise_heading{
+        font-style: oblique;
+        font-family: 'Gill Sans';       
+        color: darkblue;
+        font-size: xx-large;
+        text-align: center;
+  }
+  .start_heading{
+    font-style: oblique;
+    font-family: 'Gill Sans';       
+    color: darkblue;
+    font-size: xx-large;
+  }
+  .about_intro{
+      font-size: 1.3em;
+  }
+  .about_org{
+     padding-top: 15px; 
+  }
+  

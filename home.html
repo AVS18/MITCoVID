@@ -9,41 +9,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <title>selfLearning4All</title>
     <link rel="stylesheet" href="sl4a_home.css">
-    <style>
-        body{
-            font-family: "Comic Sans MS", sans-serif;	
-
-        }
-        .navbar-nav a{
-            font-size: larger;
-            margin-left: 50px;
-            font-stretch: expanded;
-            text-align: center;
-          }
-          .navbar-nav a:hover{
-            color: white !important;
-            border-radius: 5px; 
-          }
-          .about_heading, .promise_heading{
-                font-style: oblique;
-                font-family: 'Gill Sans';       
-                color: darkblue;
-                font-size: xx-large;
-                text-align: center;
-          }
-          .start_heading{
-            font-style: oblique;
-            font-family: 'Gill Sans';       
-            color: darkblue;
-            font-size: xx-large;
-          }
-          .about_intro{
-              font-size: 1.3em;
-          }
-          .about_org{
-             padding-top: 15px; 
-          }
-    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
@@ -68,10 +33,10 @@
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="btn-outline-primary nav-link" type="button">Login</a>
+                <a type="button" data-toggle="modal" data-target="#login" class="btn-outline-primary nav-link">Login</a>
             </li>
             <li class="nav-item">
-                <a class="btn-outline-secondary nav-link" type="button">Register</a>
+                <a type="button" data-toggle="modal" data-target="#register" class="btn-outline-primary nav-link">Register</a>
             </li>
           </ul>
         </div>
@@ -83,12 +48,19 @@
         <br>
         <p class="about_heading">About Us</p>
         <div class="container about_intro">
-            <p class="start_heading">Self Learning 4 all</p>
+            <p class="start_heading">Theme of Self Learning 4 all</p>
             <ol>
-                <li class="about_org">Provide Resources on selected domains you wish to study.</li>
+                <li class="about_org">We provide Resources on different fields in Engineering & Medical Domains to study.</li>
                 <li class="about_org">These resources are already published in different websites.</li>
-                <li class="about_org">We show you the best to gain knowledge.</li>
-                <li class="about_org">Register, Select a topic and Go Ahead</li>
+                <li class="about_org">We redirect you to that particular resource and study.</li>
+                <li class="about_org">Our volunteers assist you and clear your doubts.</li>
+            </ol>
+            <p class="start_heading">How Self Learning 4 All Works</p>
+            <ol>
+                <li class="about_org">Register in Self Learning 4 All Portal</li>
+                <li class="about_org">Choose your Domain (Engineering / Medical)</li>
+                <li class="about_org">Select the Topic of Interest in given Domain</li>
+                <li class="about_org">Go Ahead and enjoy</li>
             </ol>
             <br>
         </div> 
@@ -136,5 +108,91 @@
         </form>
         <input type="submit" value="Submit" class="btn btn-primary">
     </section>
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="#" method="POST">
+                <div class="row">
+                  <div class="col-sm">
+                    <div class="form-group">
+                      <label for="name">UserName</label>
+                      <input type="text" name="username" id="name" required class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <div class="form-group">
+                      <label for="upassword">Password</label>
+                      <input type="password" name="password" id="upassword" required class="form-control">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade bd-example-modal-lg" id="register" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" method="POST">
+                  <div class="row">
+                    <div class="col-sm">
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="par_name" id="name" required class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-sm">
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="par_email" id="email" required class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm">
+                      <div class="form-group">
+                        <label for="umobile">Mobile</label>
+                        <input type="text" name="mobile" id="umobile" required class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-sm">
+                      <div class="form-group">
+                        <label for="stream">Stream</label>
+                        <select name="par_stream" id="stream" class="form-control">
+                            <option value="Select">Select</option>
+                            <option value="Engineering">Engineering</option>
+                            <option value="Medical">Medical</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 </html>

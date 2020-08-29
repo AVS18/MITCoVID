@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SL4A | Course Board</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="sl4a_home.css">
+</head>
+<body>
+  
+<div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading"><p class="about_heading">Self Learning <br>4 All</p></div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light">Home</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
+        <a href="topics.html" class="list-group-item list-group-item-action bg-light">Topics Available</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Your Topics</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Logout</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <p class="justify-content-end ml-auto" style="font-style: oblique;">Welcome guest</p>
+      </nav>
+      <div class="container-fluid">
+        <br><p class="about_heading">Introduction to Python Programming</p>
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Basics of Python</h4>
+              <p class="card-text">Why Python became famous? What is the speciality of Python Programming?</p>
+              <a href="https://www.youtube.com/watch?v=hEgO047GxaQ" target="_blank" class="card-link">Video</a>
+              <a href="https://www.w3schools.com/python/python_intro.asp" target="_blank" class="card-link">Article</a>
+              <a type="button" data-toggle="modal" data-target="#raiseDoubt" class="card-link">Need More Help?</a>
+            </div>
+          </div>  
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Operators in Python</h4>
+              <p class="card-text">Do you know, Python has a special operator **?</p>
+              <a href="https://www.youtube.com/watch?v=v5MR5JnKcZI" target="_blank" class="card-link">Video</a>
+              <a href="https://www.programiz.com/python-programming/operators" target="_blank" class="card-link">Article</a>
+              <a type="button" data-toggle="modal" data-target="#raiseDoubt" class="card-link">Need More Help?</a>
+            </div>
+          </div>  
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Loops In Python</h4>
+              <p class="card-text">Do the task again and again and again</p>
+              <a href="https://www.youtube.com/watch?v=OnDr4J2UXSA" target="_blank" class="card-link">Video</a>
+              <a href="https://www.learnpython.org/en/Loops" target="_blank" class="card-link">Article</a>
+              <a type="button" data-toggle="modal" data-target="#raiseDoubt" class="card-link">Need More Help?</a>
+            </div>
+          </div>  
+        </div>
+        <br><br>
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">OOPS</h4>
+              <p class="card-text">Object Oriented in Python. Is it worthy?</p>
+              <a href="https://www.youtube.com/watch?v=qiSCMNBIP2g" target="_blank" class="card-link">Video</a>
+              <a href="https://www.edureka.co/blog/object-oriented-programming-python" target="_blank" class="card-link">Article</a>
+              <a type="button" data-toggle="modal" data-target="#raiseDoubt" class="card-link">Need More Help?</a>
+            </div>
+          </div>  
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Files Operations</h4>
+              <p class="card-text">I used to Read and write files in my workspace but how ;)</p>
+              <a href="https://www.youtube.com/watch?v=ixEeeNjjOJ0" target="_blank" class="card-link">Video</a>
+              <a href="https://www.geeksforgeeks.org/reading-writing-text-files-python/" target="_blank" class="card-link">Article</a>
+              <a type="button" data-toggle="modal" data-target="#raiseDoubt" class="card-link">Need More Help?</a>
+            </div>
+          </div>  
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Modules and Packages</h4>
+              <p class="card-text">Make my program available to run for all</p>
+              <a href="https://www.youtube.com/watch?v=f26nAmfJggw" target="_blank" class="card-link">Video</a>
+              <a href="https://www.learnpython.org/en/Modules_and_Packages" class="card-link">Article</a>
+              <a type="button" data-toggle="modal" data-target="#raiseDoubt" class="card-link">Need More Help?</a>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+    <div class="modal fade bd-example-modal-lg" id="raiseDoubt" tabindex="-1" role="dialog" aria-labelledby="doubtModel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Raise Doubt</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="#" method="POST">
+              <div class="row">
+                <div class="col-sm">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="par_name" id="name" required class="form-control">
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="par_email" id="email" required class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm">
+                  <div class="form-group">
+                    <label for="topic">Topic Name</label>
+                    <input type="text" name="topic_name" id="topic" required class="form-control">
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="par_query" id="message" placeholder="Explain your doubt elaboratedly" class="form-control"></textarea>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Post Query</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
