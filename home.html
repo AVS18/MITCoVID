@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>selfLearning4All</title>
+    <link rel="stylesheet" href="sl4a_home.css">
+    <style>
+        body{
+            font-family: "Comic Sans MS", sans-serif;	
+
+        }
+        .navbar-nav a{
+            font-size: larger;
+            margin-left: 50px;
+            font-stretch: expanded;
+            text-align: center;
+          }
+          .navbar-nav a:hover{
+            color: white !important;
+            border-radius: 5px; 
+          }
+          .about_heading, .promise_heading{
+                font-style: oblique;
+                font-family: 'Gill Sans';       
+                color: darkblue;
+                font-size: xx-large;
+                text-align: center;
+          }
+          .start_heading{
+            font-style: oblique;
+            font-family: 'Gill Sans';       
+            color: darkblue;
+            font-size: xx-large;
+          }
+          .about_intro{
+              font-size: 1.3em;
+          }
+          .about_org{
+             padding-top: 15px; 
+          }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+        <a class="navbar-brand" href="#">Self Learning 4 All</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="btn-outline-primary nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="btn-outline-info nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item active">
+                <a class="btn-outline-success nav-link" href="#">Our Promise</a>
+            </li>
+            <li class="nav-item active">
+                <a class="btn-outline-warning nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="btn-outline-primary nav-link" type="button">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn-outline-secondary nav-link" type="button">Register</a>
+            </li>
+          </ul>
+        </div>
+      </nav>   
+    <section id = "home">
+        <img src="self_learn1.png" class="image" alt="">
+    </section>    
+    <section id = "about">
+        <br>
+        <p class="about_heading">About Us</p>
+        <div class="container about_intro">
+            <p class="start_heading">Self Learning 4 all</p>
+            <ol>
+                <li class="about_org">Provide Resources on selected domains you wish to study.</li>
+                <li class="about_org">These resources are already published in different websites.</li>
+                <li class="about_org">We show you the best to gain knowledge.</li>
+                <li class="about_org">Register, Select a topic and Go Ahead</li>
+            </ol>
+            <br>
+        </div> 
+        <div class="parallax"></div>
+    </section>
+    <section id="promise">
+        <p class="promise_heading">Our Promise</p>
+        <div class="container">
+            <p class="start_heading">Ownership on the Articles / References / Video Tutorials shown in Self Learning 4 All portal belongs to the original creators / websites we redirect. This resource is made for the student community by the student community</p>
+        </div>
+        <div class="parallax2"></div>
+    </section>
+    <section id="contact" class="container"> 
+        <p class="promise_heading">Want to Meet</p>
+        <form action="/contact">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="cname">Name</label>
+                        <input type="text" id="cname" name="contact_name" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="cemail">Email</label>
+                        <input type="email" id="cemail" name="contact_email" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="cmobile">Phone Number</label>
+                        <input type="text" id="cmobile" name="contact_mobile" class="form-control">
+                        <small>Enter with Country Code Eg: India +91 XXXXXXXXXX</small>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="cmessage">Message</label>
+                        <textarea id="cmessage" name="contact_message" class="form-control"></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </section>
+</body>
+</html>
